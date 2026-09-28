@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Toy Haven - Collectible figurines, toys, board games and diecast cars">
+
+    <title>Toy Haven | Toy Store</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/ToyHaven.png">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <div class="top-bar">
+    <div class="top-bar-left">
+        WELCOME TO TOY HAVEN!
+    </div>
+
+    <div class="top-bar-right">
+        <a href="support.html">About Us</a>
+        <a href="support.html#contactSection">Contact Us</a>
+        <a href="wishlist.html">My Account</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="support.html">Need Help?</a>
+    </div>
+</div>
+
+    <header class="top-header">
+
+        <div class="header-container">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="images/ToyHaven.png"
+                    alt="Toy Haven Logo"
+                >
+
+            </a>
+            
+
+
+
+            <!-- SEARCH -->
+
+            <form class="search-box" id="searchForm">
+
+                <input
+                    type="text"
+                    id="homeSearch"
+                    placeholder="Search for toys, figures, games..."
+                    aria-label="Search products"
+                >
+
+                <button type="submit" aria-label="Search">
+                    <img src="images/search.png" alt="search">
+                </button>
+
+            </form>
+
+
+
+            <!-- HEADER ICONS -->
+
+            <div class="header-icons">
+
+                <a href="wishlist.html" aria-label="Wishlist">
+                    ✎ᝰ
+                </a>
+
+                <a href="cart.html" aria-label="Shopping cart">
+                    <img src="images/cart.png" alt="Shopping Cart">
+                </a>
+
+            </div>
+
+
+
+            <!-- MOBILE MENU -->
+
+
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="main-navigation" id="mainNavigation">
+
+        <div class="navigation-container">
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">New Arrivals</a>
+            <a href="products.html?category=Toys">Toys</a>
+            <a href="products.html?category=Figurines">Figurines</a>
+            <a href="products.html?category=Board%20Games">Board Games</a>
+            <a href="products.html?category=Gaming%20Consoles">Gaming Consoles</a>
+</div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         CATEGORY STRIP
+    ========================== -->
+
+    <section class="category-strip">
+
+        <div class="category-strip-container">
+
+            <a href="products.html?category=Figurines">
+                FIGURINES
+            </a>
+
+            <a href="products.html?category=Toys">
+                TOYS
+            </a>
+
+            <a href="products.html?category=Board Games">
+                BOARD GAMES
+            </a>
+
+            <a href="products.html?category=Gaming Consoles">
+                GAMING CONSOLES
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             ROTATING BANNER
+        ========================== -->
+
+        <section class="hero-slider">
+
+            <div class="slider-container">
+
+
+                <!-- =================================
+                     SLIDE 1 - LEGO
+                ================================== -->
+
+                <div class="slide active">
+                    <video class="slide-video" muted playsinline>
+                        <source src ="images/ps5.mp4" type="video/mp4">
+                        Your browser does not support this video
+                    </video>
+                </div>
+                <div class="slide">
+
+                    <img
+                        src="images/lego1.webp"
+                        alt="LEGO promotion"
+                        usemap="#legoBanner"
+                    >
+
+                    <!-- CLICKABLE SHOP NOW AREA -->
+
+                    <map name="legoBanner">
+
+                        <area
+                            shape="rect"
+                            coords="575,407,758,455"
+                            href="products.html?brand=lego"
+                            alt="Shop LEGO products"
+                        >
+
+                    </map>
+
+                </div>
+
+
+
+                <!-- =================================
+                     SLIDE 2 - FIGURINES
+                ================================== -->
+
+                <div class="slide">
+
+                    <img src="images/hotwheels1.png" alt="Hot Wheels collection">
+
+                </div>
+
+                <!-- =================================
+                     SLIDE 4 - DIECAST
+                ================================== -->
+
+                <div class="slide">
+
+                    <img
+                        src="images/labubu.png"
+                        alt="Diecast cars promotion"
+                    >
+
+                </div>
+
+
+
+                <!-- PREVIOUS BUTTON -->
+
+                <button
+                    class="slider-button previous"
+                    id="previousSlide"
+                    aria-label="Previous banner"
+                >
+                    ‹
+                </button>
+
+
+
+                <!-- NEXT BUTTON -->
+
+                <button
+                    class="slider-button next"
+                    id="nextSlide"
+                    aria-label="Next banner"
+                >
+                    ›
+                </button>
+
+
+
+                <!-- SLIDER DOTS -->
+
+                <div class="slider-dots">
+
+                    <button
+                        class="dot active"
+                        data-slide="0"
+                        aria-label="Show banner 1"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-slide="1"
+                        aria-label="Show banner 2"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-slide="2"
+                        aria-label="Show banner 3"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-slide="3"
+                        aria-label="Show banner 4"
+                    ></button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SHOP BY CATEGORY
+        ========================== -->
+
+        <section class="categories-section">
+
+            <div class="section-heading">
+
+                <span>DISCOVER THE LATEST TOYS, GAMES AND MUST HAVE LAUNCHES</span>
+
+                <h2>Shop By Category</h2>
+
+                <p>
+                    Discover something they'll love, whatever their favourite way to play.
+                </p>
+
+            </div>
+
+
+
+            <div class="category-grid">
+
+
+                <!-- FIGURINES -->
+
+                <a
+                    href="products.html?category=figurines"
+                    class="category-card"
+                >
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/onepiece1.svg"
+                            alt="Collectible figurines"
+                        >
+
+                    </div>
+
+                    <h3>Collectibles</h3>
+
+                    <p>Explore collectible characters</p>
+
+                </a>
+
+
+
+                <!-- TOYS -->
+
+                <a
+                    href="products.html?category=toys"
+                    class="category-card"
+                >
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/categroy 2.jpg"
+                            alt="Toys and playsets"
+                        >
+
+                    </div>
+
+                    <h3>Toys</h3>
+
+                    <p>Fun for every adventure</p>
+
+                </a>
+
+
+
+                <!-- BOARD GAMES -->
+
+                <a
+                    href="products.html?category=boardgames"
+                    class="category-card"
+                >
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/category3.jpg"
+                            alt="Board games"
+                        >
+
+                    </div>
+
+                    <h3>Board Games</h3>
+
+                    <p>Bring everyone together</p>
+
+                </a>
+
+
+
+                <!-- DIECAST -->
+
+                <a
+                    href="products.html?category=diecast"
+                    class="category-card"
+                >
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/category4.jpg"
+                            alt="Diecast model cars"
+                        >
+
+                    </div>
+
+                    <h3>Gaming Consoles</h3>
+
+                    <p>Level up your gaming experience</p>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCT OF THE DAY
+        ========================== -->
+
+        <section class="product-day-section">
+
+            <div class="product-day-container">
+
+
+                <div class="product-day-image">
+
+                    <video class ="prodyct-video" autoplay muted loop playsinline>
+                        <source src="images/Product of the day.mp4" type="video/mp4">
+                    </video>
+                    
+
+                </div>
+
+
+
+                <div class="product-day-content">
+
+                    <span>PRODUCT OF THE DAY</span>
+
+                    <h2>Hot Wheels Monster Truck</h2>
+
+                    <p>
+                        Unleash the action with this Hot Wheels Monster Truck,
+                        featuring oversized wheels and a bold design made for
+                        exciting play and collection.
+                    </p>
+
+                    <a
+                        href="products.html"
+                        class="primary-button"
+                    >
+                        SHOP NOW →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+    <!-- =========================================
+        TRENDING THIS WEEK
+    ========================================= -->
+
+    <section class="trending-section">
+
+        <div class="trending-container">
+
+            <div class="trending-heading">
+                <h2>Trending This Week</h2>
+            </div>
+
+
+            <div class="trending-grid">
+
+                <!-- CARD 1 -->
+                <div class="trending-card">
+
+                    <div class="trending-image">
+                        <img src="images/totw1.png"
+                             alt="Latest toys and collectibles">
+                    </div>
+
+                    <div class="trending-content trending-blue">
+
+                        <h3>New Arrivals</h3>
+
+                        <p>
+                            Discover the latest toys, collectibles
+                            and must-have releases at Toy Haven.
+                        </p>
+
+                        <a href="products.html" class="trending-button">
+                            SHOP NOW
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="trending-card">
+
+                    <div class="trending-image">
+                        <img src="images/totw2.png"
+                             alt="Gaming consoles and accessories">
+                    </div>
+
+                    <div class="trending-content trending-red">
+
+                        <h3>Gaming Picks</h3>
+
+                        <p>
+                            Level up with exciting gaming consoles,
+                            accessories and gaming essentials.
+                        </p>
+
+                        <a href="products.html?category=gaming" class="trending-button">
+                            SHOP NOW
+                        </a>
+
+                     </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="trending-card">
+
+                    <div class="trending-image">
+                        <img src="images/totw3.png"
+                             alt="Collectible figures and models">
+                    </div>
+
+                    <div class="trending-content trending-yellow">
+
+                        <h3>Collector's Picks</h3>
+
+                        <p>
+                            Explore character figures, diecast models
+                            and unique collectibles.
+                        </p>
+
+                        <a href="products.html?category=collectibles"
+                        class="trending-button">
+                            VIEW MORE
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-column footer-brand">
+
+                <h3>TOY HAVEN</h3>
+
+                <p>
+                    Your destination for collectible figurines,
+                    toys, board games and gaming essentials.
+                </p>
+                <p>No. 74, D.S.Senanayake Street, Kandy, Sri Lanka</p>
+                <h2>+94 74 253 2006</h2>
+                <p>Daily support : 9.00 a.m. - 11.00 p.m.</p>
+
+            </div>
+
+
+
+            <!-- SHOP -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="cart.html">Shopping Cart</a>
+
+            </div>
+            <!-- CATEGORIES -->
+
+            <div class="footer-column">
+
+                <h3>Categories</h3>
+
+                <a href="products.html?category=Figurines">
+                    Figurines
+                </a>
+
+                <a href="products.html?category=Toys">
+                    Toys
+                </a>
+
+                <a href="products.html?category=Board Games">
+                    Board Games
+                </a>
+
+                <a href="products.html?category=Gaming Consoles">
+                    Gaming Consoles
+                </a>
+
+            </div>
+
+
+            <!-- CUSTOMER SERVICE -->
+
+            <div class="footer-column">
+
+                <h3>CUSTOMER SERVICE</h3>
+
+                <a href="support.html#contactSection">Contact Us</a>
+
+                <a href="support.html">About Us</a>
+
+                <a href="support.html#faqSection">FAQ</a>
+                <a href="support.html">Support</a>
+
+            </div>
+        </div>
+        <div class="footer-newsletter">
+            <div class="newsletter-title">
+                Newsletter Subscription
+            </div>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email to subscribe"
+                    aria-label="Email address"
+                    required
+                >
+                <button type="submit">
+                    ✉ &nbsp; Subscribe
+                </button>
+            </form>
+
+            <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Toy Haven. All Rights Reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

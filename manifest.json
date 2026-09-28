@@ -1,0 +1,17 @@
+{
+  "name": "Toy Haven",
+  "short_name": "Toy Haven",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e52521",
+  "description": "Toy Haven - Collectible figurines, toys, board games and gaming essentials.",
+  "icons": [
+    {
+      "src": "images/ToyHaven.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

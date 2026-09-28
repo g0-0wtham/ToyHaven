@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Feedback & Support | Toy Haven</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/ToyHaven.png">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <div class="top-bar">
+
+        <div class="top-bar-left">
+            WELCOME TO TOY HAVEN!
+        </div>
+
+
+        <div class="top-bar-right">
+
+            <a href="support.html">
+                About Us
+            </a>
+
+            <a href="support.html#contactSection">
+                Contact Us
+            </a>
+
+            <a href="wishlist.html">
+                My Account
+            </a>
+
+            <a href="cart.html">
+                Shopping Cart
+            </a>
+
+            <a href="support.html">
+                Need Help?
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="top-header">
+
+        <div class="header-container">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <img
+                    src="images/ToyHaven.png"
+                    alt="Toy Haven Logo"
+                >
+
+            </a>
+
+
+
+            <!-- SEARCH -->
+
+            <form
+                class="search-box"
+                id="supportSearchForm"
+            >
+
+                <input
+                    type="text"
+                    id="supportSearch"
+                    placeholder="Search for toys, figures, games..."
+                    aria-label="Search products"
+                >
+
+                <button
+                    type="submit"
+                    aria-label="Search"
+                >
+
+                    <img
+                        src="images/search.png"
+                        alt="Search"
+                    >
+
+                </button>
+
+            </form>
+
+
+
+            <!-- HEADER ICONS -->
+
+            <div class="header-icons">
+
+                <a
+                    href="wishlist.html"
+                    aria-label="Wishlist"
+                >
+                    ♡
+                </a>
+
+
+                <a
+                    href="cart.html"
+                    aria-label="Shopping cart"
+                >
+
+                    <img
+                        src="images/cart.png"
+                        alt="Shopping Cart"
+                    >
+
+                    <span
+                        id="cartCount"
+                        class="cart-count"
+                    >
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav
+        class="main-navigation"
+        id="mainNavigation"
+    >
+
+        <div class="navigation-container">
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">New Arrivals</a>
+            <a href="products.html?category=Toys">Toys</a>
+            <a href="products.html?category=Figurines">Figurines</a>
+            <a href="products.html?category=Board%20Games">Board Games</a>
+            <a href="products.html?category=Gaming%20Consoles">Gaming Consoles</a>
+</div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         PAGE CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- PAGE HEADING -->
+
+        <section class="support-heading">
+
+            <h1>
+                Feedback & Support
+            </h1>
+
+            <p>
+                We would love to hear from you.
+                Send us your feedback or find answers
+                to frequently asked questions.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             FEEDBACK + FAQ
+        ========================== -->
+
+        <section
+            class="support-section"
+            id="faqSection"
+        >
+
+
+            <!-- FEEDBACK FORM -->
+
+            <div
+                class="feedback-section"
+                id="contactSection"
+            >
+
+                <h2>
+                    Send Us Your Feedback
+                </h2>
+
+                <p>
+                    Have a question, suggestion or problem?
+                    Let us know.
+                </p>
+
+
+                <form
+                    id="feedbackForm"
+                    novalidate
+                >
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="feedbackName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="feedbackName"
+                            placeholder="Enter your name"
+                        >
+
+                        <small
+                            id="nameError"
+                            class="form-error"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="feedbackEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="feedbackEmail"
+                            placeholder="Enter your email"
+                        >
+
+                        <small
+                            id="emailError"
+                            class="form-error"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="feedbackMessage">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="feedbackMessage"
+                            rows="6"
+                            placeholder="Write your message here..."
+                        ></textarea>
+
+                        <small
+                            id="messageError"
+                            class="form-error"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="feedback-submit"
+                    >
+                        SEND FEEDBACK
+                    </button>
+
+
+                    <p
+                        id="feedbackSuccess"
+                        class="feedback-success"
+                    ></p>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FAQ
+            ========================== -->
+
+            <div class="faq-section">
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+
+
+                <!-- FAQ 1 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            How can I place an order?
+                        </span>
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Browse our products, add the items
+                            you want to your cart and proceed
+                            to checkout.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 2 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            Can I save products for later?
+                        </span>
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. You can add products to your
+                            wishlist and manage them from
+                            the My Collection page.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 3 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            What payment methods are available?
+                        </span>
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Toy Haven supports card payment
+                            simulation and Cash on Delivery
+                            during checkout.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 4 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            How can I contact Toy Haven?
+                        </span>
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You can contact us by submitting
+                            the feedback form on this page.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 5 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            Is my feedback saved?
+                        </span>
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Submitted feedback is stored
+                            locally in your browser using
+                            localStorage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-main">
+
+
+            <!-- TOY HAVEN -->
+
+            <div class="footer-column footer-brand">
+
+                <h3>
+                    TOY HAVEN
+                </h3>
+
+
+                <p>
+                    Your destination for collectible
+                    figurines, toys, board games and
+                    gaming essentials.
+                </p>
+
+
+                <p>
+                    No. 74, D.S.Senanayake Street, Kandy, Sri Lanka
+                </p>
+
+
+                <h2>
+                    +94 74 253 2006
+                </h2>
+
+
+                <p>
+                    Daily support : 9.00 a.m. - 11.00 p.m.
+                </p>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="products.html">
+                    Products
+                </a>
+
+
+                <a href="wishlist.html">
+                    Wishlist
+                </a>
+
+
+                <a href="cart.html">
+                    Shopping Cart
+                </a>
+
+            </div>
+
+
+
+            <!-- CATEGORIES -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+
+                <a href="products.html?category=Figurines">
+                    Figurines
+                </a>
+
+
+                <a href="products.html?category=Toys">
+                    Toys
+                </a>
+
+
+                <a href="products.html?category=Board%20Games">
+                    Board Games
+                </a>
+
+
+                <a href="products.html?category=Diecast%20Cars">
+                    Diecast Cars
+                </a>
+
+            </div>
+
+
+
+            <!-- CUSTOMER SERVICE -->
+
+            <div class="footer-column">
+
+                <h3>
+                    CUSTOMER SERVICE
+                </h3>
+
+
+                <a href="support.html#contactSection">
+                    Contact Us
+                </a>
+
+
+                <a href="support.html">
+                    About Us
+                </a>
+
+
+                <a href="support.html#faqSection">
+                    FAQ
+                </a>
+
+
+                <a href="support.html">
+                    Support
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-newsletter">
+
+            <div class="newsletter-title">
+                Newsletter Subscription
+            </div>
+
+
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email to subscribe"
+            >
+
+
+            <button
+                type="button"
+                id="newsletterSubscribe"
+            >
+                ✉ &nbsp; Subscribe
+            </button>
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Toy Haven. All Rights Reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+    <script src="support.js"></script>
+
+
+</body>
+
+</html>
