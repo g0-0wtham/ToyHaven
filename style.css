@@ -4602,13 +4602,19 @@ input {
    STEP 2 - RESPONSIVE DESIGN FINAL OVERRIDES
    ========================================= */
 
-/* Desktop navigation: show links, hide hamburger */
+/* Desktop navigation: show links and keep hamburger visible */
 .menu-toggle {
-    display: none !important;
+    display: flex !important;
+    flex-shrink: 0;
 }
 
 .navigation-container > a {
     display: block !important;
+}
+
+/* Desktop: hide links when hamburger is active */
+.main-navigation.active .navigation-container > a {
+    display: none !important;
 }
 
 /* Keep the header flexible on medium screens */
@@ -4680,11 +4686,14 @@ input {
         width: 125px;
         height: 62px;
         flex-shrink: 0;
+        overflow: hidden;
     }
 
     .logo img {
-        width: 155px;
-        max-width: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     .search-box {
@@ -5003,4 +5012,47 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+
+/* FINAL SMALL-SCREEN LOGO FIX */
+@media (max-width: 600px) {
+    .logo {
+        width: 105px;
+        height: 55px;
+        flex: 0 0 105px;
+        overflow: hidden;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .header-container {
+        gap: 8px;
+    }
+}
+
+
+/* =========================================
+   FINAL DESKTOP HAMBURGER BEHAVIOUR
+   ========================================= */
+@media (min-width: 801px) {
+    .menu-toggle {
+        display: flex !important;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 20;
+    }
+
+    .navigation-container > a {
+        display: block !important;
+    }
+
+    .main-navigation.active .navigation-container > a {
+        display: none !important;
+    }
 }
