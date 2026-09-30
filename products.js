@@ -3321,9 +3321,7 @@ function renderPagination(totalProducts) {
 
 }
 
-// ==========================================
-// FILTER PRODUCTS
-// ==========================================
+// Filter Products //
 
 function filterProducts() {
 
@@ -3331,9 +3329,7 @@ function filterProducts() {
         [...products];
 
 
-    // ==========================
-    // MAIN CATEGORY
-    // ==========================
+    // Main Category // 
 
     if (currentCategory !== "all") {
 

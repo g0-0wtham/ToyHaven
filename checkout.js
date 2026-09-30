@@ -195,32 +195,26 @@ function displayCheckout() {
 
         itemElement.innerHTML = `
 
-            <img
-                src="${item.image}"
-                alt="${item.name}"
-            >
-
             <div class="checkout-item-info">
 
                 <h3>
                     ${item.name}
                 </h3>
 
-                <p>
-                    Quantity: ${quantity}
-                </p>
+            </div>
 
-                <span>
-                    Rs.
-                    ${itemTotal.toLocaleString(
-                        "en-LK",
-                        {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2
-                        }
-                    )}
-                </span>
+            <div class="checkout-item-price">
+                Rs. ${itemTotal.toLocaleString(
+                    "en-LK",
+                    {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                    }
+                )}
+            </div>
 
+            <div class="checkout-item-quantity">
+                ${quantity}
             </div>
 
         `;
@@ -514,13 +508,13 @@ if (checkoutForm) {
             event.preventDefault();
 
 
-            // GET CART
+            // Get cart //
 
             const cart =
                 getCart();
 
 
-            // CHECK EMPTY CART
+            // Check empty cart//
 
             if (
                 cart.length === 0
@@ -535,7 +529,7 @@ if (checkoutForm) {
             }
 
 
-            // CUSTOMER NAME
+            // Customer Name //
 
             const fullName =
                 document
@@ -546,7 +540,7 @@ if (checkoutForm) {
                     .trim();
 
 
-            // EMAIL
+            // Email //
 
             const email =
                 document
@@ -557,7 +551,7 @@ if (checkoutForm) {
                     .trim();
 
 
-            // ADDRESS
+            // Address //
 
             const address =
                 document
